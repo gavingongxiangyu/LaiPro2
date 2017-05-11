@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hbw="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@mipmap/projectschedulingbg"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/project_schedul_fl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <com.yx.yxcustomprogress.ColorfulRingProgressView
+            android:id="@+id/project_schedul_crpv"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:interpolator="@android:anim/decelerate_interpolator"
+            hbw:bgColor="#d5302f"
+            hbw:sweepAngle="270"
+            hbw:fgColorEnd="#fffc00"
+            hbw:fgColorStart="#ff4200"
+            hbw:mTitleTextColor="#ffffff"
+            hbw:mTitleTextSize="13sp"
+            hbw:startAngle="135"
+            hbw:strokeWidth="5dp" />
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_progress"
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

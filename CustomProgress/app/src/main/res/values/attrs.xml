@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 背景颜色 -->
+    <attr name="bgColor" format="color" />
+    <!-- 渐变颜色 -->
+    <attr name="fgColor" format="color" />
+    <!-- 进度值 -->
+    <attr name="percent" format="float" />
+    <!-- 起点位置 -->
+    <attr name="startAngle" format="float" />
+    <!-- 起点位置 -->
+    <attr name="sweepAngle" format="float" />
+    <!-- 百分比（字） -->
+    <attr name="mTitleText" format="string" />
+    <!-- 百分比字体（颜色） -->
+    <attr name="mTitleTextColor" format="color" />
+    <!-- 百分比字体（大小） -->
+    <attr name="mTitleTextSize" format="dimension" />
+
+    <declare-styleable name="ColorfulRingProgressView">
+        <attr name="bgColor" />
+        <attr name="fgColorStart" format="color" />
+        <attr name="fgColorEnd" format="color" />
+        <attr name="strokeWidth" format="dimension" />
+        <attr name="percent" />
+        <attr name="startAngle" />
+        <attr name="sweepAngle" />
+        <attr name="mTitleText" />
+        <attr name="mTitleTextColor" />
+        <attr name="mTitleTextSize" />
+    </declare-styleable>
+
+</resources>
